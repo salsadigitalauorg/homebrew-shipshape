@@ -5,20 +5,20 @@
 class Shipshape < Formula
   desc "Golang CLI tool to run checks/audits on your systems"
   homepage "https://github.com/salsadigitalauorg/shipshape"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.12/shipshape-Darwin-x86_64.tar.gz"
-      sha256 "c42a3a444fe5d28cb6bbdc09d711f197e75d1641f524b044243a574a4998566e"
+      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.13/shipshape-Darwin-x86_64.tar.gz"
+      sha256 "45e7276759ebeef809a5206dad844c2a70461cd0714df84e7821e2af4fc06979"
 
       def install
         bin.install "shipshape"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.12/shipshape-Darwin-aarch64.tar.gz"
-      sha256 "77f8e11755ef1f07010342c4469b51065180171b9ad52df7701d9bea076e499b"
+      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.13/shipshape-Darwin-aarch64.tar.gz"
+      sha256 "c292b1f578e291102e7d81f7b9ba8412ae2087afd276b1004aee230b69b92afb"
 
       def install
         bin.install "shipshape"
@@ -28,16 +28,16 @@ class Shipshape < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.12/shipshape-Linux-aarch64.tar.gz"
-      sha256 "f10348788899560e4932ffab3905990ac8bcb104105adcdad3f60924fc42acaf"
+      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.13/shipshape-Linux-aarch64.tar.gz"
+      sha256 "60db426ccb76e9f98d2979671ae69b857d044b50501a8d9113cd8152f7f3a090"
 
       def install
         bin.install "shipshape"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.12/shipshape-Linux-x86_64.tar.gz"
-      sha256 "d58ac21004cd5d06c4140ccae24be74017227636274dcb3160be8103f94803e7"
+      url "https://github.com/salsadigitalauorg/shipshape/releases/download/v0.1.13/shipshape-Linux-x86_64.tar.gz"
+      sha256 "f26c79e6020ca95510fa1df170a0481964e271658c47b6d12987e69acc84600f"
 
       def install
         bin.install "shipshape"
