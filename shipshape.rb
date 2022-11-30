@@ -45,6 +45,8 @@ class Shipshape < Formula
     end
   end
 
+  head "https://github.com/salsadigitalauorg/shipshape.git"
+
   test do
     system "#{bin}/shipshape version"
   end
